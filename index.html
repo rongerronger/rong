@@ -1,36 +1,30 @@
-<!DOCTYPE html>
-<html>
-
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>U are so beautiful</title>
-	<!--[if lt IE 9]>
-<script src="html5shiv.min.js"></script>
-<![endif]-->
-	<style type="text/css">
-		@font-face {
-			font-family: digit;
-			src: url('digital-7_mono.ttf') format("truetype");
-		}
-	</style>
-	<!--第一部分样式-->
-	<link href="css/default.css" type="text/css" rel="stylesheet">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/garden.js"></script>
-	<script type="text/javascript" src="js/functions.js"></script>
-	<!--第二部分鏈接-->
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-	<link href="css/add.css" rel="stylesheet" type="text/css"/>
+<title>love line with Rongrong</title>
 
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/add.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery.easing.min.js"></script>
 </head>
 
 <body>
-	<!--背景音乐-->
-	<embed src="http://p3qhnc0eg.bkt.clouddn.com/U%20are%20so%20beautiful.mp3" width="0" height="0" loop="-1" autostart="true"> </embed>
-
-	<!--第一部分-->
-	<section class="panel home" data-section-name="home">
+<embed src="http://p3qhnc0eg.bkt.clouddn.com/U%20are%20so%20beautiful.mp3" width="0" height="0" loop="-1" autostart="true"> </embed>
+<section class="panel home" data-section-name="home">
 		<div class="inner">
 			<div id="mainDiv">
 				<div id="content">
@@ -55,6 +49,7 @@
 						<br />
 						<span class="keyword"> I love you! </span><br /> -- 郝先森<br />
 
+
 					</div>
 					<div id="loveHeart">
 						<canvas id="garden"></canvas>
@@ -64,109 +59,106 @@
 								<div id="elapseClock"></div>
 							</div>
 							<!--			<div id="loveu">
-						<br/>
-						<div class="signature">- 郝先森</div>
-					</div>
-	-->
+					<br/>
+					<div class="signature">- 郝先森</div>
+				</div>
+-->
 						</div><a href="#overview" class="scroll" color=rgb(242, 102, 232)>next page</a>
 					</div>
-
-
 				</div>
 			</div>
-		</div>
 
-		<script type="text/javascript">
-			var offsetX = $("#loveHeart").width() / 2;
-			var offsetY = $("#loveHeart").height() / 2 - 55;
-			var together = new Date();
-			together.setFullYear(2017, 11, 6);
-			together.setHours(12);
-			together.setMinutes(0);
-			together.setSeconds(0);
-			together.setMilliseconds(0);
+			<script type="text/javascript">
+				var offsetX = $("#loveHeart").width() / 2;
+				var offsetY = $("#loveHeart").height() / 2 - 55;
+				var together = new Date();
+				together.setFullYear(2017, 11, 6);
+				together.setHours(12);
+				together.setMinutes(0);
+				together.setSeconds(0);
+				together.setMilliseconds(0);
 
-			if (!document.createElement('canvas').getContext) {
-				var msg = document.createElement("div");
-				msg.id = "errorMsg";
-				msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
-				document.body.appendChild(msg);
-				$("#code").css("display", "none")
-				$("#copyright").css("position", "absolute");
-				$("#copyright").css("bottom", "10px");
-				document.execCommand("stop");
-			} else {
-				setTimeout(function() {
-					startHeartAnimation();
-				}, 5000);
+				if (!document.createElement('canvas').getContext) {
+					var msg = document.createElement("div");
+					msg.id = "errorMsg";
+					msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+					document.body.appendChild(msg);
+					$("#code").css("display", "none")
+					$("#copyright").css("position", "absolute");
+					$("#copyright").css("bottom", "10px");
+					document.execCommand("stop");
+				} else {
+					setTimeout(function() {
+						startHeartAnimation();
+					}, 5000);
 
-				timeElapse(together);
-				setInterval(function() {
 					timeElapse(together);
-				}, 500);
+					setInterval(function() {
+						timeElapse(together);
+					}, 500);
 
-				adjustCodePosition();
-				$("#code").typewriter();
-			}
-		</script>
+					adjustCodePosition();
+					$("#code").typewriter();
+				}
+			</script>
 	</section>
 
 	<!--第二部分-->
 	<section class="panel overview" data-section-name="overview">
 		<div id="mainDiv">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-4 col-md-4">
-					<div class="thumbnail">
-						<img src="http://p3qhnc0eg.bkt.clouddn.com/1.jpg">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-4 col-md-4">
+						<div class="thumbnail">
+							<img src="http://p3qhnc0eg.bkt.clouddn.com/1.jpg">
+						</div>
+					</div>
+					<div class="col-xs-4 col-md-4">
+						<div class="thumbnail">
+							<img src="http://p3qhnc0eg.bkt.clouddn.com/2.jpg">
+						</div>
+					</div>
+					<div class="col-xs-4 col-md-4">
+						<div class="thumbnail">
+							<img src="http://p3qhnc0eg.bkt.clouddn.com/3.jpg">
+						</div>
 					</div>
 				</div>
-				<div class="col-xs-4 col-md-4">
-					<div class="thumbnail">
-						<img src="http://p3qhnc0eg.bkt.clouddn.com/2.jpg">
+				<div class="row">
+					<div class="col-xs-4 col-md-4">
+						<div class="thumbnail">
+							<img src="http://p3qhnc0eg.bkt.clouddn.com/4.jpg">
+						</div>
+					</div>
+					<div class="col-xs-4 col-md-4">
+						<div class="thumbnail">
+							<img src="http://p3qhnc0eg.bkt.clouddn.com/ronger.png">
+						</div>
+					</div>
+					<div class="col-xs-4 col-md-4">
+						<div class="thumbnail">
+							<img src="http://p3qhnc0eg.bkt.clouddn.com/6.jpg">
+						</div>
 					</div>
 				</div>
-				<div class="col-xs-4 col-md-4">
-					<div class="thumbnail">
-						<img src="http://p3qhnc0eg.bkt.clouddn.com/3.jpg">
+				<div class="row">
+					<div class="col-xs-4 col-md-4">
+						<div class="thumbnail">
+							<img src="http://p3qhnc0eg.bkt.clouddn.com/7.jpg">
+						</div>
+					</div>
+					<div class="col-xs-4 col-md-4">
+						<div class="thumbnail">
+							<img src="http://p3qhnc0eg.bkt.clouddn.com/8.jpg">
+						</div>
+					</div>
+					<div class="col-xs-4 col-md-4">
+						<div class="thumbnail">
+							<img src="http://p3qhnc0eg.bkt.clouddn.com/9.jpg">
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-xs-4 col-md-4">
-					<div class="thumbnail">
-						<img src="http://p3qhnc0eg.bkt.clouddn.com/4.jpg">
-					</div>
-				</div>
-				<div class="col-xs-4 col-md-4">
-					<div class="thumbnail">
-						<img src="http://p3qhnc0eg.bkt.clouddn.com/ronger.png">
-					</div>
-				</div>
-				<div class="col-xs-4 col-md-4">
-					<div class="thumbnail">
-						<img src="http://p3qhnc0eg.bkt.clouddn.com/6.jpg">
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-4 col-md-4">
-					<div class="thumbnail">
-						<img src="http://p3qhnc0eg.bkt.clouddn.com/7.jpg">
-					</div>
-				</div>
-				<div class="col-xs-4 col-md-4">
-					<div class="thumbnail">
-						<img src="http://p3qhnc0eg.bkt.clouddn.com/8.jpg">
-					</div>
-				</div>
-				<div class="col-xs-4 col-md-4">
-					<div class="thumbnail">
-						<img src="http://p3qhnc0eg.bkt.clouddn.com/9.jpg">
-					</div>
-				</div>
-			</div>
-		</div>
 		</div>
 
 		<!--预防报错-->
@@ -180,25 +172,6 @@
 			})();
 			</script> -->
 	</section>
-
-	<!--后续可添加-->
-	<!--第三部分-->
-	<section class="panel configuration" data-section-name="configuration">
-			<div class="inner">
-				<div style="text-align:center;clear:both">
-					<p>Open source project on <a href="https://github.com/AomanHao/rong">this site </a>from GitHub. Made for Rongrong Wang, made by <a href="https://github.com/AomanHao" target="_blank">Hao Hao</a></p>
-					<p>Copyright © 2017 - 2018 AomanHao. All Rights Reserved. Designed by <a href="https://github.com/hackerzhou" target="_blank">zhou </a> and <a href="https://github.com/shijieshangzuimeidenvren" target="_blank"> shijie</a></p>
-				</div>
-			</div>
-		</section>
-
-	<!--第四部分-->
-	<!-- <section class="panel options" data-section-name="options">
-			<div class="inner">
-
-			</div>
-		</section>
-		-->
 
 	<!--主体样式-->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -232,11 +205,9 @@
 			});
 		});
 	</script>
-
-	<!-- <div style="text-align:center;clear:both">
+	<div style="text-align:center;clear:both">
 		<p>Open source project on <a href="https://github.com/AomanHao/rong">this site </a>from GitHub. Made for Rongrong Wang, made by <a href="https://github.com/AomanHao" target="_blank">Hao Hao</a></p>
 		<p>Copyright © 2017 - 2018 AomanHao. All Rights Reserved. Designed by <a href="https://github.com/hackerzhou" target="_blank">zhou </a> and <a href="https://github.com/shijieshangzuimeidenvren" target="_blank"> shijie</a></p>
-	</div> -->
+	</div>
 </body>
-
 </html>
